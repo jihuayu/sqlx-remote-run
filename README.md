@@ -17,11 +17,11 @@ It is intended for internal tools, local admin panels, debugging endpoints, and 
 
 ## Install
 
-Until the crate is published, use it as a path dependency:
+Use it from crates.io:
 
 ```toml
 [dependencies]
-sqlx_remote_run = { path = "../sqlx-remote-run", features = ["axum"] }
+sqlx_remote_run = { version = "0.1", features = ["axum"] }
 
 axum = "0.8"
 serde_json = "1"
@@ -32,7 +32,7 @@ tokio = { version = "1", features = ["macros", "rt-multi-thread", "net"] }
 If you only need the framework-neutral core API, omit the feature:
 
 ```toml
-sqlx_remote_run = { path = "../sqlx-remote-run" }
+sqlx_remote_run = "0.1"
 ```
 
 ## Core Usage
