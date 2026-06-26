@@ -1,6 +1,6 @@
 //! Controlled remote SQL execution for local SQLx SQLite pools.
 //!
-//! `sqlx-remote-run` exposes a small JSON protocol and a framework-neutral
+//! `sqlx_remote_run` exposes a small JSON protocol and a framework-neutral
 //! service that can execute a single SQLite statement against a local
 //! [`sqlx::SqlitePool`] after token, IP, limit, and permission checks.
 //!

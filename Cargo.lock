@@ -1033,24 +1033,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "sqlx-remote-run"
-version = "0.1.0"
-dependencies = [
- "axum",
- "base64",
- "futures-util",
- "ipnet",
- "serde",
- "serde_json",
- "sqlparser",
- "sqlx",
- "subtle",
- "thiserror",
- "tokio",
- "tower",
-]
-
-[[package]]
 name = "sqlx-sqlite"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1072,6 +1054,24 @@ dependencies = [
  "thiserror",
  "tracing",
  "url",
+]
+
+[[package]]
+name = "sqlx_remote_run"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "base64",
+ "futures-util",
+ "ipnet",
+ "serde",
+ "serde_json",
+ "sqlparser",
+ "sqlx",
+ "subtle",
+ "thiserror",
+ "tokio",
+ "tower",
 ]
 
 [[package]]

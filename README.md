@@ -1,6 +1,6 @@
-# sqlx-remote-run
+# sqlx_remote_run
 
-`sqlx-remote-run` lets a service expose a small, guarded JSON API for running SQL against a local `sqlx::SqlitePool`.
+`sqlx_remote_run` lets a service expose a small, guarded JSON API for running SQL against a local `sqlx::SqlitePool`.
 
 It is intended for internal tools, local admin panels, debugging endpoints, and controlled maintenance paths where the database is local SQLite but the SQL request needs to come from another process.
 
@@ -21,7 +21,7 @@ Until the crate is published, use it as a path dependency:
 
 ```toml
 [dependencies]
-sqlx-remote-run = { path = "../sqlx-remote-run", features = ["axum"] }
+sqlx_remote_run = { path = "../sqlx-remote-run", features = ["axum"] }
 
 axum = "0.8"
 serde_json = "1"
@@ -32,7 +32,7 @@ tokio = { version = "1", features = ["macros", "rt-multi-thread", "net"] }
 If you only need the framework-neutral core API, omit the feature:
 
 ```toml
-sqlx-remote-run = { path = "../sqlx-remote-run" }
+sqlx_remote_run = { path = "../sqlx-remote-run" }
 ```
 
 ## Core Usage

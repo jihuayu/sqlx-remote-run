@@ -1,12 +1,12 @@
 [package]
-name = "sqlx-remote-run"
+name = "sqlx_remote_run"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.94"
 license = "Apache-2.0"
 description = "Controlled remote SQL execution for local SQLx SQLite pools."
 repository = "https://github.com/jihuayu/sqlx-remote-run"
-documentation = "https://docs.rs/sqlx-remote-run"
+documentation = "https://docs.rs/sqlx_remote_run"
 readme = "README.md"
 keywords = ["sqlx", "sqlite", "remote", "axum"]
 categories = ["database", "web-programming"]
