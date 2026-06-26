@@ -1,0 +1,38 @@
+[package]
+name = "sqlx-remote-run"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.94"
+license = "MIT OR Apache-2.0"
+description = "Controlled remote SQL execution for local SQLx SQLite pools."
+
+[features]
+default = []
+axum = ["dep:axum"]
+
+[dependencies]
+axum = { version = "0.8.9", optional = true }
+base64 = "0.22.1"
+futures-util = "0.3.31"
+ipnet = "2.11.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+sqlparser = "0.62.0"
+sqlx = { version = "0.9.0", default-features = false, features = ["sqlite", "runtime-tokio"] }
+subtle = "2.6.1"
+thiserror = "2.0.17"
+tokio = { version = "1.48.0", default-features = false, features = ["time"] }
+
+[dev-dependencies]
+tower = { version = "0.5.2", features = ["util"] }
+tokio = { version = "1.48.0", features = ["macros", "rt-multi-thread"] }
+
+[lints.rust]
+future-incompatible = { level = "warn", priority = -3 }
+nonstandard_style = { level = "deny", priority = -2 }
+rust_2018_idioms = { level = "deny", priority = -1 }
+unsafe_code = "deny"
+
+[lints.clippy]
+all = { level = "deny", priority = 10 }
+redundant_clone = { level = "deny", priority = 9 }
